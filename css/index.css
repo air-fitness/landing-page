@@ -15,7 +15,10 @@ body {
 }
 header {
   background-color: #00BBFF;
-  opacity: 0.8;
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 @media (max-width: 500px) {
   header {
@@ -49,7 +52,7 @@ header nav a {
   margin-bottom: 65px;
   opacity: 1;
   padding: 0.46em 1.6em;
-  border: 0.1em solid #000000;
+  border: 0.1em solid white;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
@@ -59,7 +62,7 @@ header nav a {
   background-color: #99ff99;
   text-align: center;
   transition: all 0.15s;
-  color: #0144ff;
+  color: white;
 }
 header nav a:hover {
   text-shadow: 0 0 2em #ffffff;
@@ -68,7 +71,6 @@ header nav a:hover {
   background-color: #00BBFF;
 }
 .intro-section .intro-img {
-  margin-top: -215px;
   background-image: url("girl-jogging.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -88,9 +90,11 @@ header nav a:hover {
 .divider h1 {
   text-align: center;
   padding-top: 45px;
+  color: #23237a;
 }
 .divider p {
   line-height: 1.5;
+  color: #23237a;
 }
 .divider .p-tag-div {
   margin: 0 50px;
@@ -99,6 +103,8 @@ header nav a:hover {
   font-size: 100px;
   color: #99ff99;
   position: absolute;
+  z-index: 0;
+  margin-top: 165px;
 }
 @media (max-width: 500px) {
   .intro-img-div h1 {
@@ -113,7 +119,7 @@ header nav a:hover {
   width: 50%;
 }
 .mid-section .mid-img img {
-  border-radius: 270px;
+  border-radius: 50%;
 }
 @media (max-width: 500px) {
   .mid-section .mid-img img {
@@ -130,6 +136,7 @@ header nav a:hover {
 }
 .mid-section .mid-section2 p {
   padding-top: 130px;
+  color: #23237a;
 }
 footer {
   background-color: #00BBFF;
@@ -138,6 +145,7 @@ footer {
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 @media (max-width: 500px) {
   footer {

@@ -16,7 +16,10 @@ html, body {
 
 header {
   background-color: #00BBFF;
-  opacity: .8;
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 
   @media (max-width: 500px) {
 
@@ -53,18 +56,18 @@ header {
     align-self: flex-end;
     margin-bottom: 65px;
     opacity: 1;
-    padding:0.46em 1.6em;
-    border:0.1em solid #000000;
-    border-radius:0.12em;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid white;
+    border-radius: 0.12em;
     box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-    background-color:#99ff99;
-    text-align:center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: #99ff99;
+    text-align: center;
     transition: all 0.15s;
-    color: #0144ff;
+    color: white;
 
     &:hover {
       text-shadow: 0 0 2em rgba(255,255,255,1);
@@ -82,7 +85,6 @@ header {
 
   .intro-img{
 
-    margin-top: -215px;
     background-image: url("girl-jogging.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -108,13 +110,13 @@ header {
 
     text-align: center;
     padding-top: 45px;
-
+    color: #23237a;
   }
 
   p {
 
     line-height: 1.5;
-
+    color: #23237a;
   }
 
   .p-tag-div{
@@ -132,7 +134,8 @@ h1 {
 font-size: 100px;
 color:#99ff99;
 position: absolute;
-
+z-index: 0;
+margin-top: 165px;
 @media (max-width: 500px) {
 
       margin-top: 0%;
@@ -150,7 +153,7 @@ position: absolute;
 
     width:50%;
     img {
-      border-radius: 270px;
+      border-radius: 50%;
       @media (max-width: 500px) {
 
             height: 100%;
@@ -172,7 +175,7 @@ position: absolute;
     p {
 
       padding-top: 130px;
-
+      color: #23237a;
     }
   }
 }
@@ -185,6 +188,8 @@ footer {
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
+
   @media (max-width: 500px) {
 
         margin-top: 0;
