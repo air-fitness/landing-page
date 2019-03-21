@@ -32,11 +32,6 @@ header nav h1 {
   width: 30px;
   opacity: 1;
 }
-header nav input {
-  align-self: flex-end;
-  margin-bottom: 65px;
-  opacity: 1;
-}
 header nav img {
   width: 100px;
   height: 100px;
@@ -49,10 +44,28 @@ header nav img {
     margin-top: 30px;
   }
 }
-header nav button {
+header nav a {
   align-self: flex-end;
   margin-bottom: 65px;
   opacity: 1;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #99ff99;
+  text-align: center;
+  transition: all 0.15s;
+  color: #0144ff;
+}
+header nav a:hover {
+  text-shadow: 0 0 2em #ffffff;
+  color: #99ff99;
+  border-color: #FFFFFF;
+  background-color: #00BBFF;
 }
 .intro-section .intro-img {
   margin-top: -215px;
@@ -74,7 +87,7 @@ header nav button {
 }
 .divider h1 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 .divider p {
   line-height: 1.5;
@@ -99,6 +112,9 @@ header nav button {
 .mid-section .mid-img {
   width: 50%;
 }
+.mid-section .mid-img img {
+  border-radius: 270px;
+}
 @media (max-width: 500px) {
   .mid-section .mid-img img {
     height: 100%;
@@ -111,6 +127,9 @@ header nav button {
   justify-content: center;
   margin: 0 100px;
   line-height: 1.5;
+}
+.mid-section .mid-section2 p {
+  padding-top: 130px;
 }
 footer {
   background-color: #00BBFF;

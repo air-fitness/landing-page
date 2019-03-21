@@ -34,12 +34,6 @@ header {
       opacity: 1;
     }
 
-    input {
-      align-self: flex-end;
-      margin-bottom: 65px;
-      opacity: 1;
-    }
-
   img {
     width:100px;
     height:100px;
@@ -55,13 +49,34 @@ header {
 
     }
 
-  button {
+  a {
     align-self: flex-end;
     margin-bottom: 65px;
     opacity: 1;
+    padding:0.46em 1.6em;
+    border:0.1em solid #000000;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    background-color:#99ff99;
+    text-align:center;
+    transition: all 0.15s;
+    color: #0144ff;
+
+    &:hover {
+      text-shadow: 0 0 2em rgba(255,255,255,1);
+      color:#99ff99;
+      border-color:#FFFFFF;
+      background-color:#00BBFF;
+     }
+
     }
   }
 }
+
 
 .intro-section {
 
@@ -92,7 +107,7 @@ header {
   h1 {
 
     text-align: center;
-    padding-top: 20px;
+    padding-top: 45px;
 
   }
 
@@ -135,7 +150,7 @@ position: absolute;
 
     width:50%;
     img {
-
+      border-radius: 270px;
       @media (max-width: 500px) {
 
             height: 100%;
@@ -154,6 +169,11 @@ position: absolute;
     margin: 0 100px;
     line-height: 1.5;
 
+    p {
+
+      padding-top: 130px;
+
+    }
   }
 }
 
