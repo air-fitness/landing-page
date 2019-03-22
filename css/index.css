@@ -15,7 +15,10 @@ body {
 }
 header {
   background-color: #00BBFF;
-  opacity: 0.8;
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 @media (max-width: 500px) {
   header {
@@ -32,11 +35,6 @@ header nav h1 {
   width: 30px;
   opacity: 1;
 }
-header nav input {
-  align-self: flex-end;
-  margin-bottom: 65px;
-  opacity: 1;
-}
 header nav img {
   width: 100px;
   height: 100px;
@@ -47,15 +45,33 @@ header nav img {
 @media (max-width: 500px) {
   header nav img {
     margin-top: 30px;
+    margin-left: 130px;
   }
 }
-header nav button {
+header nav a {
   align-self: flex-end;
   margin-bottom: 65px;
   opacity: 1;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #99ff99;
+  text-align: center;
+  transition: all 0.15s;
+  color: #23237a;
+}
+header nav a:hover {
+  text-shadow: 0 0 2em #ffffff;
+  color: #99ff99;
+  border-color: #FFFFFF;
+  background-color: #23237a;
 }
 .intro-section .intro-img {
-  margin-top: -215px;
   background-image: url("girl-jogging.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -64,7 +80,12 @@ header nav button {
 }
 @media (max-width: 500px) {
   .intro-section .intro-img {
-    margin-top: 0px;
+    margin-top: 125px;
+  }
+}
+@media (max-width: 800px) {
+  .intro-section .intro-img {
+    margin-top: 125px;
   }
 }
 .divider {
@@ -74,10 +95,12 @@ header nav button {
 }
 .divider h1 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 45px;
+  color: #23237a;
 }
 .divider p {
   line-height: 1.5;
+  color: #23237a;
 }
 .divider .p-tag-div {
   margin: 0 50px;
@@ -86,10 +109,12 @@ header nav button {
   font-size: 100px;
   color: #99ff99;
   position: absolute;
+  z-index: 0;
+  margin-top: 165px;
 }
 @media (max-width: 500px) {
   .intro-img-div h1 {
-    margin-top: 0%;
+    margin-top: 35%;
   }
 }
 .mid-section {
@@ -99,10 +124,22 @@ header nav button {
 .mid-section .mid-img {
   width: 50%;
 }
+.mid-section .mid-img img {
+  border-radius: 50%;
+}
 @media (max-width: 500px) {
   .mid-section .mid-img img {
     height: 100%;
     width: 130%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+}
+@media (max-width: 800px) {
+  .mid-section .mid-img img {
+    width: 140%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 .mid-section .mid-section2 {
@@ -111,46 +148,52 @@ header nav button {
   margin: 0 100px;
   line-height: 1.5;
 }
+.mid-section .mid-section2 p {
+  padding-top: 130px;
+  color: #23237a;
+}
+@media (max-width: 500px) {
+  .mid-section .mid-section2 p {
+    padding-bottom: 50px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .mid-section .mid-section2 p {
+    margin-left: 60px;
+    margin-bottom: 70px;
+  }
+}
 footer {
   background-color: #00BBFF;
   margin-top: -4px;
   padding-bottom: 100px;
   padding-top: 50px;
   display: flex;
-  justify-content: space-between;
+  padding-bottom: 60px;
 }
 @media (max-width: 500px) {
   footer {
     margin-top: 0;
   }
 }
-footer a {
-  text-decoration: none;
-  margin: 0 10px;
-}
-.team-intro-img-div .team-intro-img {
-  margin-top: -680px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-.team-intro-img-div h1 {
-  padding-top: -315px;
-  font-size: 100px;
-  color: #99ff99;
-  position: absolute;
+footer div {
+  margin-left: 500px;
 }
 @media (max-width: 500px) {
-  .team-intro-img-div h1 {
-    margin-top: 0%;
+  footer div {
+    margin-left: 135px;
   }
 }
-.team-div {
-  padding-top: 530px;
+@media (max-width: 800px) {
+  footer div {
+    margin-left: 140px;
+  }
 }
-.team-div .team {
-  position: absolute;
-  width: 100px;
-  height: 100px;
+footer a {
+  text-decoration: none;
+  margin: 0 0px;
+}
+footer a:hover {
+  color: #99ff99;
 }
