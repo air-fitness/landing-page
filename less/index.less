@@ -68,13 +68,14 @@ header {
     background-color: #99ff99;
     text-align: center;
     transition: all 0.15s;
-    color: white;
+    color:#23237a ;
+
 
     &:hover {
       text-shadow: 0 0 2em rgba(255,255,255,1);
       color:#99ff99;
       border-color:#FFFFFF;
-      background-color:#00BBFF;
+      background-color:#23237a;
      }
 
     }
@@ -97,6 +98,13 @@ header {
           margin-top: 125px;
 
     }
+
+    @media (max-width: 800px) {
+
+          margin-top: 125px;
+
+    }
+
   }
 
 }
@@ -164,6 +172,14 @@ margin-top: 165px;
 
       }
 
+      @media (max-width: 800px) {
+
+        width: 140%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+
     }
   }
 
@@ -183,6 +199,13 @@ margin-top: 165px;
 
         padding-bottom: 50px;
         margin-left: 50px;
+
+      }
+
+      @media (max-width: 800px) {
+
+        margin-left: 60px;
+        margin-bottom: 70px;
 
       }
     }
@@ -206,11 +229,17 @@ footer {
 
   div {
 
-    margin-left: 140px;
+    margin-left: 500px;
 
     @media (max-width: 500px) {
 
-          margin-left: 10px;
+          margin-left: 135px;
+
+    }
+
+    @media (max-width: 800px) {
+
+        margin-left: 140px;
 
     }
 
@@ -220,68 +249,13 @@ footer {
 
     text-decoration: none;
     margin: 0 0px;
-  }
+    &:hover {
 
-  .team-link {
-
-    margin-left: 290px;
-
-    @media (max-width: 500px) {
-
-    margin-left: 30px;
+      color: #99ff99;
 
     }
-
   }
 
-  .about-link {
-
-    padding-left: 135px;
-
-    @media (max-width: 500px) {
-
-          padding-left: 20px;
-
-    }
-
-  }
-
-}
 
 
-// team page
-
-.team-intro-img-div {
-
-  .team-intro-img{
-    margin-top: -680px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-    h1 {
-    padding-top: -315px;
-    font-size: 100px;
-    color:#99ff99;
-    position: absolute;
-
-    @media (max-width: 500px) {
-
-          margin-top: 0%;
-
-    }
-    }
-
-}
-.team-div {
-  padding-top: 530px;
-
-  .team {
-
-    position: absolute;
-    width: 100px;
-    height: 100px;
-
-  }
 }

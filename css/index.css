@@ -63,13 +63,13 @@ header nav a {
   background-color: #99ff99;
   text-align: center;
   transition: all 0.15s;
-  color: white;
+  color: #23237a;
 }
 header nav a:hover {
   text-shadow: 0 0 2em #ffffff;
   color: #99ff99;
   border-color: #FFFFFF;
-  background-color: #00BBFF;
+  background-color: #23237a;
 }
 .intro-section .intro-img {
   background-image: url("girl-jogging.jpg");
@@ -79,6 +79,11 @@ header nav a:hover {
   width: 100%;
 }
 @media (max-width: 500px) {
+  .intro-section .intro-img {
+    margin-top: 125px;
+  }
+}
+@media (max-width: 800px) {
   .intro-section .intro-img {
     margin-top: 125px;
   }
@@ -130,6 +135,13 @@ header nav a:hover {
     border-radius: 0;
   }
 }
+@media (max-width: 800px) {
+  .mid-section .mid-img img {
+    width: 140%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 .mid-section .mid-section2 {
   width: 50%;
   justify-content: center;
@@ -146,6 +158,12 @@ header nav a:hover {
     margin-left: 50px;
   }
 }
+@media (max-width: 800px) {
+  .mid-section .mid-section2 p {
+    margin-left: 60px;
+    margin-bottom: 70px;
+  }
+}
 footer {
   background-color: #00BBFF;
   margin-top: -4px;
@@ -160,56 +178,22 @@ footer {
   }
 }
 footer div {
-  margin-left: 140px;
+  margin-left: 500px;
 }
 @media (max-width: 500px) {
   footer div {
-    margin-left: 10px;
+    margin-left: 135px;
+  }
+}
+@media (max-width: 800px) {
+  footer div {
+    margin-left: 140px;
   }
 }
 footer a {
   text-decoration: none;
   margin: 0 0px;
 }
-footer .team-link {
-  margin-left: 290px;
-}
-@media (max-width: 500px) {
-  footer .team-link {
-    margin-left: 30px;
-  }
-}
-footer .about-link {
-  padding-left: 135px;
-}
-@media (max-width: 500px) {
-  footer .about-link {
-    padding-left: 20px;
-  }
-}
-.team-intro-img-div .team-intro-img {
-  margin-top: -680px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-.team-intro-img-div h1 {
-  padding-top: -315px;
-  font-size: 100px;
+footer a:hover {
   color: #99ff99;
-  position: absolute;
-}
-@media (max-width: 500px) {
-  .team-intro-img-div h1 {
-    margin-top: 0%;
-  }
-}
-.team-div {
-  padding-top: 530px;
-}
-.team-div .team {
-  position: absolute;
-  width: 100px;
-  height: 100px;
 }
